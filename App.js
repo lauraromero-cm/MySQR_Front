@@ -1,20 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, Button, ScrollView } from 'react-native';
+import QR from './Qr'
+//import { Button } from 'react-native-web';
+const icon = require('./assets/favicon.png');
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <ScrollView style={styles.container}>
+      
+      <StatusBar style="dark" />
+      <Text>button init</Text>
+      <QR />
+      <Text>button end</Text>
+      
+
+    </ScrollView>
   );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
 });
